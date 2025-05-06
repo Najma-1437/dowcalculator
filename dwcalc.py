@@ -1,5 +1,5 @@
 class DateCalculator:
-    def _init_(self, year, month, day):
+    def __init__(self, year, month, day):
         self.original_year = year
         self.day = day
         if month < 3:
@@ -25,6 +25,6 @@ class DateCalculator:
         print(f"{self.original_year}-{self.month if self.month <= 12 else self.month - 12}-{self.day} was a {weekday}.")
 
 
-# Example usage:
-date = DateCalculator(1589, 9, 15)
+
+date = DateCalculator(1999, 7, 27)
 date.print_result()
