@@ -1,5 +1,5 @@
 class DateCalculator:
-    def _init_(self, year, month, day):
+    def __init__(self, year, month, day):
         self.original_year = year
         self.day = day
         if month < 3:
@@ -26,5 +26,5 @@ class DateCalculator:
 
 
 # Example usage:
-date = DateCalculator(1589, 9, 15)
+date = DateCalculator(2025, 5, 10)
 date.print_result()
